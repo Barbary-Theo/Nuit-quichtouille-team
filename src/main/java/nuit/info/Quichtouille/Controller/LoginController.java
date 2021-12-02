@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Controller
 @RequestMapping("/")
@@ -18,10 +19,26 @@ public class LoginController {
     @Resource
     private UserService userService;
 
+    @GetMapping
+    public String getMappingPage(Model model){
+        return "login";
+    }
+
     @PostMapping("/addUser")
     @ResponseBody
-    public void addUser(@RequestBody User user){
-        userService.save(user);
+    public User addUser(@RequestBody User user){
+        return userService.save(user);
+    }
+
+
+    @GetMapping("/getAll")
+    public List<User> getAll(){
+        return userService.findAll();
+    }
+
+    @GetMapping("/geet")
+    public void geet(){
+        System.out.println("oui");
     }
 
 }

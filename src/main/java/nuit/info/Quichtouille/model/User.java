@@ -1,11 +1,12 @@
 package nuit.info.Quichtouille.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
+@Entity
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nom;
     private String prenom;
@@ -20,8 +21,11 @@ public class User {
         this.mdp = mdp;
     }
 
-    @Id
-    @GeneratedValue
+    public User() {
+
+    }
+
+
 
     @Column(name = "id", unique = true, nullable = false)
     public long getId() {
