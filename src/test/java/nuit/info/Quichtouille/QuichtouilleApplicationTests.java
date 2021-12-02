@@ -1,4 +1,4 @@
-package nuit.info.quichtouille;
+package nuit.info.Quichtouille;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

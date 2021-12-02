@@ -1,6 +1,6 @@
 package nuit.info.Quichtouille.repositories;
 
-import nuit.info.quichtouille.model.Delivery;
+import nuit.info.Quichtouille.model.Delivery;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.*;
 import org.springframework.data.repository.query.Param;

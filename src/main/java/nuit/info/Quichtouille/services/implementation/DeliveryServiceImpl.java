@@ -1,8 +1,8 @@
 package nuit.info.Quichtouille.services.implementation;
 
+import nuit.info.Quichtouille.model.Delivery;
 import nuit.info.Quichtouille.repositories.DeliveryRepository;
 import nuit.info.Quichtouille.services.DeliveryService;
-import nuit.info.quichtouille.model.Delivery;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.List;
 
 /*
- * Implementation of Deliveryervice
+ * Implementation of UserService
  */
 @Component
 @Transactional
@@ -323,6 +323,7 @@ public class DeliveryServiceImpl implements DeliveryService {
     public List<Delivery> searchPickingInstruction(String road, Integer cycle, String manifest, Integer startPickingDeliveryStop, Integer endPickingDeliveryStop, Pageable page) {
         return null;
     }
+
 //
 //    //Usual CRUD services
 //    @Override

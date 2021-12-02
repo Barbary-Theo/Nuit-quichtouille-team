@@ -1,6 +1,7 @@
 package nuit.info.Quichtouille.services;
 
-import nuit.info.quichtouille.model.Delivery;
+
+import nuit.info.Quichtouille.model.Delivery;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.query.Param;
 

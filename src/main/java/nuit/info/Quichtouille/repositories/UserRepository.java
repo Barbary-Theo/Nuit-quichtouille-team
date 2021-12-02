@@ -1,7 +1,6 @@
 package nuit.info.Quichtouille.repositories;
 
 import nuit.info.Quichtouille.model.User;
-import nuit.info.quichtouille.model.Delivery;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;

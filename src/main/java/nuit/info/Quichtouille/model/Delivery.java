@@ -1,4 +1,4 @@
-package nuit.info.quichtouille.model;
+package nuit.info.Quichtouille.model;
 
 import javax.persistence.*;
 import java.util.Date;
