@@ -1,4 +1,4 @@
-package nuit.info.quichtouille.services;
+package nuit.info.Quichtouille.services;
 
 import nuit.info.quichtouille.model.Delivery;
 import org.springframework.data.domain.Pageable;
