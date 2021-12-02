@@ -1,4 +1,4 @@
-package nuit.info.Quichtouille;
+package nuit.info.quichtouille;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
