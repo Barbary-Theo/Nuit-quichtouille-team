@@ -1,6 +1,6 @@
-package nuit.info.Quichtouille.repositories;
+package nuit.info.quichtouille.repositories;
 
-import nuit.info.Quichtouille.model.User;
+import nuit.info.quichtouille.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import javax.transaction.Transactional;
