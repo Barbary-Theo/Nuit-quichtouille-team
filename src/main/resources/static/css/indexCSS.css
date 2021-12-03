@@ -1,3 +1,8 @@
 .contour {
     padding: 5%;
+    margin: 0 10px 0;
+}
+
+.contour-card {
+    margin: 0 3px 0;
 }
