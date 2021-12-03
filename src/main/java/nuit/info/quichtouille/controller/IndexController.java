@@ -6,14 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/captcha")
-public class CaptchaController {
+@RequestMapping("/index")
+public class IndexController {
 
     @GetMapping
-    public String getMappingPage(Model model) {
+    public String getMappingPage(Model model){
 
-        return "captcha";
+        return "index";
     }
 }
-
-
