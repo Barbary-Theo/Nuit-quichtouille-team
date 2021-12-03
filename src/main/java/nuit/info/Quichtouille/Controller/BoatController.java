@@ -16,7 +16,6 @@ public class BoatController {
     @Autowired
     private BoatRepository boatRepository;
 
-
     @PostMapping("/addBoat")
     @ResponseBody
     public Boat addBoat(@RequestBody Boat boat){
