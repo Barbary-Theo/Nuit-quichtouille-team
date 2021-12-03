@@ -34,7 +34,7 @@ public class BoatServiceImpl implements BoatService {
     }
 
     @Override
-    public Boat save(User user) {
+    public Boat save(Boat boat) {
         return null;
     }
 
