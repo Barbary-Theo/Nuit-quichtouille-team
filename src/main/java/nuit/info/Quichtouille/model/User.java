@@ -22,6 +22,12 @@ public class User {
         this.mdp = mdp;
     }
 
+    public User(String nom, String prenom, String mdp) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.mdp = mdp;
+    }
+
     public User() {
 
     }
