@@ -13,11 +13,10 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Controller
-@RequestMapping("/")
 public class LoginController {
 
-    @Resource
-    private UserService userService;
+    @Autowired
+    private UserRepository userRepository;
 
     @GetMapping
     public String getMappingPage(Model model){
@@ -27,13 +26,17 @@ public class LoginController {
     @PostMapping("/addUser")
     @ResponseBody
     public User addUser(@RequestBody User user){
-        return userService.save(user);
+        return userRepository.save(user);
     }
 
 
     @GetMapping("/getAll")
     public List<User> getAll(){
-        return userService.findAll();
+        System.out.println("test");
+        userRepository.findAll().forEach(user -> {
+            System.out.println(user.getPrenom());
+        });
+        return userRepository.findAll();
     }
 
     @GetMapping("/geet")

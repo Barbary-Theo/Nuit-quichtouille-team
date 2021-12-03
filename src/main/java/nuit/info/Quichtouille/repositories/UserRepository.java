@@ -1,13 +1,14 @@
 package nuit.info.Quichtouille.repositories;
 
 import nuit.info.Quichtouille.model.User;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import javax.transaction.Transactional;
+import java.util.List;
 import java.util.Optional;
 
 @Transactional
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
 
     @Override
@@ -17,7 +18,7 @@ public interface UserRepository extends CrudRepository<User, Long> {
     Optional<User> findById(Long aLong);
 
     @Override
-    Iterable<User> findAll();
+    List<User> findAll();
 
     @Override
     void deleteAll();
